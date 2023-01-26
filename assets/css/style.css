@@ -1,19 +1,29 @@
-*{
-
-}
+*{box-sizing: border-box;}
 
 body{
-
-}
-
-header{
-
+    margin: 0px;
+    padding: 0px;
+    background-color: #E5E5E5;
 }
 
 nav{
-    
+    display: flex;
+    justify-content: center;
+}
+.nav-main{
+    max-width: 1200px;
+    background-color: #f1f1f1;
+    padding: 20px 0px;
+    float:left;
+    width: 95%; /* The width is 60%, by default */
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 0px 0px 30px 30px;
+}
+.navbar-nav{
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
 }
 
-footer{
-
-}
