@@ -13,12 +13,17 @@ body{
          rgba(167, 173, 219, 0.541)       
            ),url("") center/cover fixed no-repeat;
            /* ../img/equipegvtrading.jpeg */
-
 }
 
 header{
     width: 100%;
     height: 90px;
+}
+
+.main1{
+    padding: 13vh 5% 15vh 5%;
+    width: 100%;
+    height: auto;
 }
 
 .nav{
@@ -106,7 +111,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 13vh 5% 15vh 5%;
+    /* padding: 13vh 5% 15vh 5%; */
     
 }
 .home-text{
@@ -138,13 +143,9 @@ header{
     background: #0084ff;
     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
-/* .home-vid .vid{
-    width: 100%;
-} */
 
 .home-vid{
     width: 900px;
-
 }
 
 .vid{
@@ -228,6 +229,12 @@ footer{
 
 
 /*2°MAIN*/
+.main2{
+    padding: 13vh 5% 15vh 5%;
+    width: 100%;
+    height: auto;
+}
+
 .home2{
     width: 100%;
     height: auto;
@@ -277,7 +284,6 @@ footer{
 .caixa-text h2{
     padding: 30px 20px 0px 20px;
     color: #0678E4;
-    text-shadow: rgba(0, 0, 0, 0.733) 1px 1px 45px;
 }
 
 @media (max-width:785px) {
