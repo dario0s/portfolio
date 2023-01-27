@@ -9,10 +9,10 @@ body{
     /* background-color: rgb(34,34,34); */
     /* background-color: rgb(241, 241, 241); */
     background: linear-gradient(to right,
-              rgba(177, 199, 228, 0.6),
-              rgba(184, 177, 141, 0.8)
+         rgb(255, 255, 255),
+         rgba(167, 173, 219, 0.541)       
            ),
-           url("assets/img/R.jfif") center/cover fixed no-repeat;
+           url("../img/equipegvtrading.jpeg") center/cover fixed no-repeat;
 }
 
 header{
