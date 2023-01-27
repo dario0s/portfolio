@@ -190,12 +190,12 @@ footer{
     }
     /*main*/
     .home{
-        /* padding: 100px 2%; */
+        padding: 2px;
         flex-direction: column;
         justify-content: flex-start;
         text-align: center;
         overflow: hidden;
-        gap: 5rem;
+        gap: 2rem;
         
     }
     .home .text-h4{
