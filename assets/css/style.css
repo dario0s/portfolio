@@ -225,7 +225,7 @@ footer{
 
 /*2°MAIN*/
 .main2{
-    padding: 13vh 5% 15vh 5%;
+    padding: 13vh 5% 0vh 5%;
     width: 100%;
     height: auto;
 }
@@ -312,9 +312,11 @@ footer{
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
-        gap:30px
+        gap:30px;
+        
     }
     .caixa-text{
         width: 80%;
-    }   
-}   
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 30px 1px;
+    }
+}
