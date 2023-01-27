@@ -20,12 +20,6 @@ header{
     height: 90px;
 }
 
-.main1{
-    padding: 13vh 5% 15vh 5%;
-    width: 100%;
-    height: auto;
-}
-
 .nav{
     display: flex;
     align-items: center;
@@ -111,7 +105,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* padding: 13vh 5% 15vh 5%; */
+    padding: 13vh 5% 15vh 5%;
     
 }
 .home-text{
