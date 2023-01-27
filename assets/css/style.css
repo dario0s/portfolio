@@ -7,13 +7,18 @@ body{
     /* padding: 15px; */
     /* max-width: 1200px; */
     /* background-color: rgb(34,34,34); */
-    background-color: rgb(241, 241, 241);
+    /* background-color: rgb(241, 241, 241); */
+    background: linear-gradient(to right,
+              rgba(177, 199, 228, 0.6),
+              rgba(184, 177, 141, 0.8)
+           ),
+           url("/assets/img/R.jfif") center/cover fixed no-repeat;
 }
 
-/* .page{
-    width: 100vh;
-    height: auto;
-} */
+header{
+    width: 100%;
+    height: 90px; 
+}
 
 .nav{
     display: flex;
@@ -93,24 +98,25 @@ body{
 
 .home{
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 10%;
+    padding: 0px 5%;
 }
 .home-text{
     max-width: 37rem;
+
 }
 .home-text .text-h4{
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     color: #2f2f8a;
     margin-bottom: 1rem;
 }
 .home-text .text-h1{
-    font-size: 4rem;
+    font-size: 5rem;
     margin-bottom: 1rem;
-    line-height: 4rem;
+    line-height: 5rem;
 }
 .home-text p{
     margin-bottom: 4rem;
@@ -130,9 +136,83 @@ body{
 /* .home-vid .vid{
     width: 100%;
 } */
+
+.home-vid{
+    width: 900px;
+
+}
+
 .vid{
-    height: 50vh;
     width: 100%;
     border-radius: 25px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+footer{
+    background-color: #3737d6;
+    height: 90px;
+}
+
+
+@media (max-width:785px) {
+    .nav{
+        padding: 18px 20px;
+    }
+    .menu{
+        display: block;
+    }
+    .menu.ativo .bar:nth-child(1){
+        transform:  translateY(8px) rotate(45deg);
+    }
+    .menu.ativo .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .menu.ativo .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu{
+        position: fixed;
+        right: -100%;
+        top: 70px;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        background: white;
+        gap: -10px;
+        transition: 0.3s;
+        border-radius: 10px;
+    }
+    .nav-menu.ativo{
+        right: 0;
+    }
+    .nav-item{
+        margin: 16px 0;
+    }
+    /*main*/
+    .home{
+        padding: 100px 2%;
+        flex-direction: column;
+        text-align: center;
+        overflow: hidden;
+        gap: 5rem;
+    }
+    .home .text-h4{
+        font-size: 15px;
+    }
+    .home .text-h1{
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+    .home p{
+        font-size: 15px;
+    }
+     .home-vid{
+        width: 90%;
+    }
+    .nlogo{
+        display: flex;
+        align-items: center;
+        width: 30%;
+        height: 90px;
+    }
 }
