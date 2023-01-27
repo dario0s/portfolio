@@ -35,17 +35,17 @@ header{
     box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px; 
 }   
 .nav .logo{
-    color: rgb(25, 0, 255);
+    color: #0678E4;;
     font-size: 1.7rem;
     font-weight: 600;
 }
 .logo span{color: black;}
 
 .nav-menu a{
-    color:rgb(79, 80, 160);
+    color:#0678E4;;
 }
 .nav-menu a:hover{
-    color: rgb(46, 43, 233);
+    color: #0678E4;
     transition: 0.3s all;
     text-shadow: rgb(0, 0, 0) 4px 5px 25px;
 }
@@ -97,16 +97,17 @@ header{
 }
 .menu .bar:nth-child(1),
 .menu .bar:nth-child(3){
-    background: red;
+    background: #0678E4;;
 }
 
 .home{
     width: 100%;
-    height: 80vh;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 5%;
+    padding: 13vh 5% 15vh 5%;
+    
 }
 .home-text{
     max-width: 37rem;
@@ -123,19 +124,19 @@ header{
     line-height: 5rem;
 }
 .home-text p{
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 }
 .home-btn{
     padding: 15px 45px;
-    background: #3737d6;
+    background: #0678E4;
     color: white;
     border-radius: 10px;
     font-weight: 700;
     transition: all 0.5s;
 }
 .home-btn:hover{
-    background: #3737d68e;
-    color: #2f2f8a;
+    background: #0084ff;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 /* .home-vid .vid{
     width: 100%;
@@ -195,7 +196,7 @@ footer{
     }
     /*main*/
     .home{
-        padding: 2px;
+        padding: 5vh 5% 13vh 5%;
         flex-direction: column;
         justify-content: flex-start;
         text-align: center;
@@ -205,7 +206,7 @@ footer{
         
     }
     .home .text-h4{
-        font-size: 15px;
+        font-size: 25px;
     }
     .home .text-h1{
         font-size: 2.5rem;
@@ -225,9 +226,11 @@ footer{
     }
 }
 
+
+/*2°MAIN*/
 .home2{
     width: 100%;
-    height: 80vh;
+    height: auto;
     margin: 0;
 }
 
@@ -235,16 +238,15 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
     padding: 0px 5%;
     width: 100%;
 }
 
-.home2-text .text-h4{
+.home2-text .text2-h4{
     font-size: 2.5rem;
-    color: #3535fa;
+    color: #0678E4;
 }
-.home2-text .text-h1{  
+.home2-text .text2-h1{  
     font-size: 3rem;
     margin-bottom: 1rem;
     line-height: 5rem;
@@ -252,24 +254,61 @@ footer{
 
 .caixa{
     display: flex;
-    width: 80%;
+    width: 100%;
     height: auto;
     justify-content: space-evenly;
     flex-direction: row;
     align-items: flex-start;
-    gap: 5%;
 }
 
 .caixa-text{
+    text-align: center;
+    width: 25%;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
     border-radius: 15px;
+    
 }
 
 .caixa-text p{
     padding: 25px 20px 30px 20px;
+    
 }
 .caixa-text h2{
     padding: 30px 20px 0px 20px;
+    color: #0678E4;
+    text-shadow: rgba(0, 0, 0, 0.733) 1px 1px 45px;
+}
 
+@media (max-width:785px) {
+    .home2{
+        padding: 18px 20px;
+    }
+
+    /*main*/
+    .home2{
+        
+        flex-direction: column;
+        justify-content: flex-start;
+        text-align: center;
+        overflow: hidden;
+    
+    }
+    .home2-text .text2-h1{
+        font-size: 20px;
+    }
+
+    .home2-text .text2-h4{
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+    .home2 p{
+        font-size: 15px;
+    }
+    .caixa{
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        height: 100%;
+    }
 }
