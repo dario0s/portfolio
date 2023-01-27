@@ -12,7 +12,7 @@ body{
               rgba(177, 199, 228, 0.6),
               rgba(184, 177, 141, 0.8)
            ),
-           url("/assets/img/R.jfif") center/cover fixed no-repeat;
+           url("assets/img/R.jfif") center/cover fixed no-repeat;
 }
 
 header{
