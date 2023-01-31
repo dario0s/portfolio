@@ -224,13 +224,13 @@ footer{
 
 
 /*2°MAIN*/
-.main2{
+.main{
     padding: 13vh 5% 0vh 5%;
     width: 100%;
     height: auto;
 }
 
-.home2{
+.sect-home2{
     width: 100%;
     height: auto;
     margin: 0;
@@ -282,12 +282,12 @@ footer{
 }
 
 @media (max-width:785px) {
-    .home2{
+    .sect-home2{
         padding: 18px 20px;
     }
 
     /*main*/
-    .home2{
+    .sect-home2{
         flex-direction: column;
         justify-content: flex-start;
         text-align: center;
@@ -302,7 +302,7 @@ footer{
         font-size: 2.5rem;
         line-height: 3rem;
     }
-    .home2 p{
+    .sect-home2 p{
         font-size: 15px;
     }
     .caixa{
@@ -320,3 +320,69 @@ footer{
         box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 30px 1px;
     }
 }
+
+/*3°MAIN*/
+/* .sect-form{
+    width: 100%;
+    height: auto;
+}
+
+.div-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form-background{
+    width: 100%;
+    height: auto;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #0084ff;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 30px 1px;
+    border-radius: 25px;
+    padding: 5%;
+    width: 500px;
+    height: 300px; 
+    gap: 100px
+}
+.formulario input{
+    width: auto;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    margin: 5%;
+}
+.formulario a{
+    width: 200px;
+    height: 70px;
+    background-color: #00ff2a;
+    font-size: 15px;
+    border-radius: 5px;
+    border: none;
+}
+
+.form-btn{
+    padding: 15px 45px;
+    background: #06e450;
+    color: white;
+    border-radius: 10px;
+    font-weight: 700;
+    transition: all 0.5s;
+    border:none;
+}
+.form-btn:hover{
+    background: #62df8b;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.form-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+} */
