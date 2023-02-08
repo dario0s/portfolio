@@ -68,7 +68,6 @@ body{
     border-radius: 15px;
     font-weight: 700;
     transition: all 0.5s;
-    
 }
 
 @media(max-width:785px) {
