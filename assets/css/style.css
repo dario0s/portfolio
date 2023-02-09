@@ -4,13 +4,15 @@
 *{box-sizing: border-box;font-family: 'Poppins', sans-serif;margin: 0px;}
 
 body{   
-    background-image: url(../img/background1.png);
+    /* background-image: url(../img/background1.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center center; */
+
+    background-color: #e7e7e7;
 }
 
-.foto-perfil{border-radius: 50%;width: 150px;height:150px}
+.foto-perfil{border-radius: 50%;width: 150px;height:150px;border: solid #2f2f8a;}
 
 .main{
     height: 100vh;
@@ -33,10 +35,11 @@ body{
     max-width: 400px;
     height: auto;
     padding: 35px;
-    background-color: rgba(255, 255, 255, 0.507);
+    background-color: #ebebeb;
     border-radius: 25px;
-    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
     gap: 15px;
+    transition: all 0.5s;
 }
 .card-profile h1{
     font-size: 2.5rem;
@@ -54,20 +57,40 @@ body{
     align-items: center;
     width: 40%;
     height: auto; 
-    gap: 1vh;
+    gap: 2vh;
 }
-.btn{
+.btn , .btn-inst{
     text-align: center;
     text-decoration: none;
     font-size: 20px; 
-    max-width: 350px;
-    width: 100%;
-    height: 60px;
+    max-width: 300px;
+    width: 100%; height: 60px;
     padding: 15px 45px;
-    color: white;
+    color: rgb(255, 255, 255);
     border-radius: 15px;
-    font-weight: 700;
+    /* font-weight: 700; */
+    background-color: #6669fa;
     transition: all 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.btn:hover{
+    background-color: #494cfc;
+    transition: all 0.5s;
+    font-size: 22px;
+    max-width: 320px;
+    width: 100%; height: 65px;
+}
+
+.btn-inst{
+    background:linear-gradient( 45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);"
+}
+.btn-inst:hover{
+    
+    transition: all 0.5s;
+    font-size: 22px;
+    max-width: 320px;
+    width: 100%; height: 65px;
+    background:linear-gradient( 45deg, #f0953396 0%,#e6693c96 25%,#dc274396 50%,#cc236696 75%,#bc188896 100%);"
 }
 
 @media(max-width:785px) {
@@ -101,3 +124,5 @@ body{
         width: 100%;
     }
 }
+
+
