@@ -3,126 +3,254 @@
 
 *{box-sizing: border-box;font-family: 'Poppins', sans-serif;margin: 0px;}
 
-body{   
-    /* background-image: url(../img/background1.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center; */
-    background-color: #e7e7e7;
+.body{   
+    background-color: #f1f1f1;
+    /* background-color: #dae6fc; */
 }
-
-.foto-perfil{border-radius: 50%;width: 150px;height:150px;border: solid #2f2f8a;}
-
-.main{
-    height: 100vh;
-    width: 100vw;
+.body.ativo{
+    background-color: #3d3d3d;
+    color: white;
+}
+.header{
+    position: fixed;
+    padding: 0px 35px;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 80px;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding: 35px 25px;
 }
-.div-prof{
-    width: 40%;
-    display: flex;
-    justify-content: center;
-}
-.card-profile{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 400px;
+.hlogo{
     height: auto;
-    padding: 35px;
-    background-color: #ebebeb;
-    border-radius: 25px;
-    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-    gap: 15px;
-    transition: all 0.5s;
+    width: auto;
 }
-.card-profile h1{
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-    text-align: center;
+.h2logo{
+    width: 250px;
 }
-.card-profile h4{
-    text-align: center;
-    font-size: 1.5rem;
-    color: #2f2f8a;
+
+.nav-list{
+    align-items: center;
+    display: flex;
+    gap: 25px;
 }
-.card-btns{
+.nav-list a{text-decoration: none;}
+
+.nav-item,.nav-btn{
+    color: black;
+    display: flex;
+}
+.nav-btn{
+    padding: 5px 15px;
+    color: #ffff;
+    background-color: #3e72ff;
+    border-radius: 7px;
+}
+.animated{
+    width: 100%;
+    height: 100%;
+}
+.main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 40%;
-    height: auto; 
-    gap: 2vh;
+    width: 100vw;
+    height: 100vh;
 }
-.btn , .btn-inst{
-    text-align: center;
-    text-decoration: none;
-    font-size: 20px; 
-    max-width: 300px;
-    width: 100%; height: 60px;
-    padding: 15px 45px;
-    color: rgb(255, 255, 255);
-    border-radius: 15px;
-    /* font-weight: 700; */
-    background-color: #6669fa;
-    transition: all 0.5s;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+.page{
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    padding: 25px;
 }
-.btn:hover{
-    background-color: #494cfc;
-    transition: all 0.5s;
-    font-size: 22px;
-    max-width: 320px;
-    width: 100%; height: 65px;
+.perfil{
+    padding: 0px 40px;
+    border-radius: 25px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    height: 150px;
+    width: 450px;
+    margin-bottom: 35px;
+    box-shadow: rgba(0, 0, 0, 0.56) 10px 10px 70px -25px;
 }
 
-.btn-inst{
-    background:linear-gradient( 45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);"
-}
-.btn-inst:hover{
+
+.landHome{
+    display: flex;
+    flex-direction: column;
+    width: 40%; 
     
-    transition: all 0.5s;
-    font-size: 22px;
-    max-width: 320px;
-    width: 100%; height: 65px;
-    background:linear-gradient( 45deg, #f0953396 0%,#e6693c96 25%,#dc274396 50%,#cc236696 75%,#bc188896 100%);"
+}
+.landHome-h4{
+    font-size: 1.5rem;
+    color:#3e72ff;
+}
+.landHome-h1{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    line-height: 4.5rem;
+}
+.EmailLand{
+    margin: 10px;
+    padding: 10px 7px;
+    width: 450px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 35px;
+    height: 60px;
+}
+.EmailLand input{  
+    border-radius: 25px 0px 0px 25px;
+    padding: 5px;
+    width: 100%;
+    border: none;
+    outline: 0;
+    font-size: 20px;
+}
+.Email-btn{
+    padding: 14px 45px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: white;
+    background-color: #3e72ff;
+}
+.Email-btn:hover{
+    background-color: #5482ff;
+    border-radius: 15px;
+    padding: 14px 47px;
+    transition: all 0.2s;
+}
+.imgLand{
+    width: 30%;
 }
 
+.menu{
+    cursor: pointer;
+    display: none;
+}
+.menu .bar{
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 3px;
+    background: black;
+    margin: 5px auto;
+    transition: all 0.3s;
+}
+.menu .bar:nth-child(1),
+.menu .bar:nth-child(3){
+    background: #0678E4;;
+}
+
+
+/* TERMINAR A RESPONSIVIDADE QUE AINDA ESTA BUGADA */
 @media(max-width:785px) {
+    .landText{
+        width: 90%;
+    }
+    .imgLand{
+        display :none;
+    }
     .main{
-        width: 100%;
         height: 100%;
-        gap: 25px;
+    }
+    .page{
+        padding: 0px;
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+    .landHome{
+        width: 100%;
+        align-items: center;
+        padding: 25px;
+    }
+    .landHome-h4{
+        font-size: 1rem;
+        color:#3e72ff;
+    }
+    .landHome-h1{
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        line-height: 3rem;
+    }
+    .perfil{
+        padding: 15px 0px;
+        flex-direction: column;
+        width: 250px;
+        height: auto;
+        box-shadow: rgba(0, 0, 0, 0.56) 5px 5px 40px -25px;
+    }
+    .EmailLand{
+        margin: 0px;
+        margin-top: 25px;
+        width: 100%;
+    }
+    .menu{
+        display: block;
+    }
+    .menu.ativo .bar:nth-child(1){
+        transform:  translateY(8px) rotate(45deg);
+    }
+    .menu.ativo .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .menu.ativo .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-list{
+        position: fixed;
+        right: -100%;
+        top: 80px;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        background: rgb(255, 255, 255);
+        gap: -10px;
+        transition: 0.3s;
+        border-radius: 0px 0px 10px 10px;
+        box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+        padding: 20px;
+    }
+    .nav-list.ativo{
+        right: 0;
+    }
+}
+
+@media(max-width:280px) {
+    .landHome{
+        padding: 25px 5px ;
+    }
+    .perfil{
+        width: 200px;
+    }
+    .h2logo{
+        width: 150px;
+    }
+    .header{
+        padding: 20px;
+        height: 80px;
+    }
+    .EmailLand{
+        width: 100%;
+        border-radius: 10px;
+        height: auto;
         display: flex;
         flex-direction: column;
+        gap: 10px;
     }
-    .btn,.btn-inst{
+    .EmailLand input{
+        background-color: transparent;
+        font-size: 20px;
+        margin-top: 10px;
+        border-radius: 0px;
         text-align: center;
-        text-decoration: none;
-        font-size: 15px; 
-        max-width: 350px;
-        width: 80%;
-        height: 60px;
-        padding: 15px 45px;
-        color: white;
-        border-radius: 15px;
-        font-weight: 700;
-        transition: all 0.5s;   
-    }
-    .div-prof{
-        width: 100%;
-    }
-    .card-profile{
-        max-width: 300px;
-        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    }
-    .card-btns{
-        width: 100%;
+        border-bottom: solid 1px #646464;
+        box-shadow: rgba(0, 0, 0, 0.56) 5px 5px 40px -25px;
     }
 }
-
-
